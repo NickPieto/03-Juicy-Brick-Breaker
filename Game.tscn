@@ -9,12 +9,12 @@
 [ext_resource path="res://UI/HUD.tscn" type="PackedScene" id=7]
 [ext_resource path="res://UI/Instructions.tscn" type="PackedScene" id=8]
 [ext_resource path="res://Effects/Camera.gd" type="Script" id=9]
-[ext_resource path="res://Assets/music.mp3" type="AudioStream" id=10]
+[ext_resource path="res://Assets/chillwave-driving-1m-46s-10333.mp3" type="AudioStream" id=10]
 [ext_resource path="res://Ball/Comet_Container.gd" type="Script" id=11]
-[ext_resource path="res://Assets/brick.wav" type="AudioStream" id=12]
-[ext_resource path="res://Assets/die.wav" type="AudioStream" id=13]
-[ext_resource path="res://Assets/wall.wav" type="AudioStream" id=14]
-[ext_resource path="res://Assets/paddle.wav" type="AudioStream" id=15]
+[ext_resource path="res://Assets/wallhit.wav" type="AudioStream" id=12]
+[ext_resource path="res://Assets/break.wav" type="AudioStream" id=13]
+[ext_resource path="res://Assets/miss.wav" type="AudioStream" id=14]
+[ext_resource path="res://Assets/ball.wav" type="AudioStream" id=15]
 [ext_resource path="res://Effects/Fever.gd" type="Script" id=16]
 [ext_resource path="res://Background.gd" type="Script" id=17]
 
@@ -235,13 +235,13 @@ autoplay = true
 stream = ExtResource( 15 )
 
 [node name="Wall_Audio" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 14 )
-
-[node name="Brick_Audio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 12 )
 
-[node name="Ball_Audio" type="AudioStreamPlayer" parent="."]
+[node name="Brick_Audio" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 13 )
+
+[node name="Ball_Audio" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
 
 [node name="Tween" type="Tween" parent="."]
 
